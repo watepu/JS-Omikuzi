@@ -14,8 +14,17 @@ body{
   font-size: 42px;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 0 10px 0 #ffb6c1;
+  user-select: none;
+  /* 文字の範囲選択を無効に */
 }
 
 #btn:hover{
   opacity: 0.8;
+}
+
+#btn.pressed{
+  box-shadow: 0 5px 0 #ffb6c1;
+  margin-top: 35px;
+  /* 影の部分を減らし、ボタンの位置をその分下にずらすことで押し込んだような動作にする */
 }
